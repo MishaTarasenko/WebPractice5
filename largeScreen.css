@@ -1,0 +1,1043 @@
+.body{
+   margin: 0px;
+   display: flex;
+   flex-direction: row;
+}
+
+.mainScreen{
+   width: 75%;
+   background-color: rgb(255, 255, 246);
+}
+
+.top{
+   width: 75%;
+   position: fixed;
+   z-index: 1;
+   top: 0px;
+   left: 0px;
+   height: 70px;
+   display:flex;
+   flex-direction: row;
+   background-color: rgb(51, 51, 49);
+}
+
+.information{
+   width: 90%;
+   margin-left: 110px;
+}
+
+.informationLine{
+   height: 30px;
+   display:flex;
+   margin: 5px;
+   margin-left: 10px;
+   margin-right: 10px;
+   align-items: center;
+   margin-bottom: none;
+   flex-direction: row;
+   justify-content: space-between;
+   border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.informationLine.menu{
+   border-bottom: none;
+}
+
+.informationTextSection{
+   display:flex;
+   flex-direction: row;
+   justify-content: left;
+   align-items: center;
+}
+
+.informationText{
+   font-family: sans-serif;
+   color: rgb(161, 161, 161);
+   font-size: 18px;
+   margin-right: 45px;
+
+}
+
+.informationText.menu{
+   color: white;  
+   font-size: 16px;
+}
+
+.enterenceButton{
+   width: 8%;
+   height: 26px;
+   border-right: 0px;
+   border-top: 0px;
+   border-bottom: 0px;
+   border-left: 0px;
+   border-radius: 5px;
+   background-color: rgb(229, 168, 72);
+}
+
+.buttonExitText{
+   font-family: sans-serif;
+   color: white;
+   font-size: 16px;
+}
+
+.pizzaKma{
+   position: fixed;
+   top: -1px;
+   left: 7px;
+   z-index: 2;
+}
+
+.pizzaKmaLabel{
+   position: relative;
+   width: 100px;
+   height: 160px;
+   transform: rotate(-180deg);
+}
+
+.pizzaKmaTextPizza{
+   position: absolute;
+   top: 15px;
+   font-family: sans-serif;
+   color: white;
+   font-size: 21px;
+   margin: 10px;
+   font-weight: 300;
+}
+
+.pizzaKmaTextKma{
+   position: absolute;
+   top: 40px;
+   font-family: sans-serif;
+   color: white;
+   font-size: 27px;
+   margin: 10px;
+   font-weight: 500;
+}
+
+.products{
+   position: relative;
+   top: 70px;
+}
+
+.heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin: 15px;
+   font-family: sans-serif;
+   font-weight: 600;
+   font-size: 30px;
+   color: rgb(51, 51, 51);
+}
+
+.amount{
+   width: 30px;
+   height: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 25px;
+   margin-left: 5px;
+   border: none;
+   font-size: 15px;
+   font-family: sans-serif;
+   color: white;
+   font-weight: 700;
+   background-color: rgb(242, 142, 40);
+}
+
+.selectButtonGroup{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin: 15px;
+}
+
+.selectButton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   margin: 5px;
+   border: none;
+   background-color: rgb(224, 142, 40);
+}
+
+.selectButton.unselected{
+   background-color: rgb(255, 255, 246);
+}
+
+.selectButtonText{
+   padding: 8px;
+   font-family: sans-serif;
+   color: white;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.selectButtonText.unselected{
+   color: rgb(224, 142, 40);
+}
+
+.pizzas{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   justify-content: center;
+   align-items: center;
+   margin-top: 15px;
+   margin-left: 12%;
+   margin-right: 12%;
+}
+
+.pizza{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 10px;
+   border-radius: 8px;
+   border: 1px solid rgb(221, 221, 221);
+   background-color: white;
+}
+
+.pizzaImg{
+   width: 95%;
+   height: 20%
+}
+
+.pizzaText{
+   display: flex;
+   justify-content: center;
+   align-items: left;
+   flex-direction: column;
+   margin: 10px;
+}
+
+.pizzaName{
+   font-family: sans-serif;
+   color: rgb(222, 114, 42);
+   font-size: 30px;
+   font-weight: 600;
+   margin: 5px;
+}
+
+.typeOfPizza{
+   font-family: sans-serif;
+   color: rgb(179, 177, 177);
+   font-size: 14px;
+   font-weight: 400;
+   margin-left: 5px;
+   margin-top: none;
+   margin-bottom: none;
+}
+
+.pizzaDescription{
+   font-family: sans-serif;
+   color: black;
+   font-size: 15px;
+   font-weight: 400;
+   margin: 5px;
+   margin-bottom: 0px;
+}
+
+.buyPizza{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+   margin: 5px;
+   margin-top: 0px;
+}
+
+.buySmallPizza{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-right: 30px;
+}
+
+.buyBigPizza{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-left: 30px;
+}
+
+.diameter{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-bottom: 5px;
+}
+
+.text{
+   font-family: sans-serif;
+   color: black;
+   font-size: 15px;
+   font-weight: 400;
+   margin-left: 5px;
+}
+
+.weight{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-bottom: 25px;
+}
+
+.price{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 7px;
+}
+
+.textPrice{
+   font-family: sans-serif;
+   color: black;
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.textPriceUan{
+   font-family: sans-serif;
+   color: black;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.buyButton{
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(230, 172, 80);
+   border: 1px solid rgb(217, 146, 42);
+   border-radius: 3px;
+}
+
+.buyButtonText{
+   font-family: sans-serif;
+   color: white;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.orderPanel{
+   position: fixed;
+   height: 100%;
+   width: 25%;
+   left: 75%;
+}
+
+.ordersTop{
+   height: 70px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.ordersTopText{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   font-family: sans-serif;
+   color: black;
+   font-size: 18px;
+   font-weight: 600;
+   margin-left: 10px;
+   margin-right: 3px;
+}
+
+.clearButton{
+   background-color: white;
+   border: none;
+   font-family: sans-serif;
+   color: gray;
+   font-size: 12px;
+   font-weight: 400;
+}
+
+.orders{
+   height: 80%;
+   z-index: 1;
+   display: flex;
+   justify-content: top;
+   align-items: center;
+   flex-direction: column;
+   overflow-y:auto;
+   background-color: rgb(245, 245, 245);
+}
+
+.order{
+   width: 100%;
+   height: 120px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.orderDiscription{
+   width: 65%;
+   display: flex;
+   justify-content: center;
+   align-items: left;
+   flex-direction: column;
+}
+
+.orderImg{
+   position: relative;
+   width: 15%;
+   height: 100%;
+   left: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.orderPizzaImg{
+   scale: 0.22;
+}
+
+.orderPizzaName{
+   font-family: sans-serif;
+   color: rgb(224, 142, 40);
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.orderPizzaCharacteristic{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   flex-direction: row;
+}
+
+.weight{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   flex-direction: row;
+   margin: 5px;
+}
+
+.diameter{
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   flex-direction: row;
+   margin: 5px;
+   margin-left: 0px;
+}
+
+.orderButtonGroup{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+}
+
+.orderPrice{
+   font-family: sans-serif;
+   color: black;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.orderAmount{
+   width: 40%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+}
+
+.minusButton{
+   width: 32px;
+   line-height: 28px;
+   position: relative;
+   border-radius: 25px;
+   justify-content: center;
+   border-right: 0px;
+   border-top: 0px;
+   border-bottom: 0px;
+   border-left: 0px;
+   font-size: 20px;
+   font-family: sans-serif;
+   font-size: 18px;
+   color: white;
+   font-weight: 800;
+   text-align: center;
+   background-color: rgb(219, 40, 40);
+   border: 1px solid rgb(174, 62, 50 );
+}
+
+.plusButton{
+   width: 32px;
+   line-height: 28px;
+   border-radius: 25px;
+   position: relative;
+   justify-content: center;
+   border-right: 0px;
+   border-top: 0px;
+   border-bottom: 0px;
+   border-left: 0px;
+   font-size: 20px;
+   font-family: sans-serif;
+   color: white;
+   font-weight: 800;
+   text-align: center;
+   background-color: rgb(34, 186, 70);
+   border: 1px solid rgb(83, 143, 69);
+}
+
+.amountText{
+   font-family: sans-serif;
+   color: black;
+   font-size: 18px;
+   font-weight: 700;
+}
+
+.cancelButton{
+   width: 32px;
+   line-height: 28px;
+   border-radius: 25px;
+   position: relative;
+   justify-content: center;
+   font-size: 18px;
+   font-family: sans-serif;
+   color: rgb(224, 142, 40);
+   font-weight: 200; 
+   text-align: center;
+   background-color: white;
+   border: 1px solid rgb(161, 161, 161);
+}
+
+.confirmationOfPurchase{
+   position: fixed;
+   height: 10%;
+   width: 25%;
+   left: 75%;
+   bottom: -1px;
+   z-index: -1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.sum{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+   margin: 10px;
+}
+
+.sumOfPurpose{
+   font-family: sans-serif;
+   color: black;
+   font-size: 16px;
+   font-weight: 550;
+}
+
+.sumInUAN{
+   font-family: sans-serif;
+   color: black;
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.confirm{
+   width: 80%;
+   height: 35px;
+   border-radius: 4px;
+   background-color: rgb(229, 171, 76);
+   border: 1px solid rgb(222, 114, 42);
+   font-family: sans-serif;
+   color: white;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.discount{
+   position: fixed;
+   bottom: -10px;
+   left: 7px;
+}
+
+.discountLabel{
+   position: relative;
+   width: 100px;
+   height: 200px;
+}
+
+.discountText{
+   width: 100px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: sans-serif;
+   color: white;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.discountText.one{
+   bottom: 80px;
+}
+
+.discountText.two{
+   bottom: 60px;
+}
+
+.discountText.three{
+   bottom: 40px;
+}
+
+.discountText.four{
+   bottom: 32px;
+   font-size: 10px;
+   color: rgb(200, 110, 30);
+}
+
+.discountText.five{
+   bottom: 12px;
+}
+
+.description{
+   height: 130px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: rgb(254, 254, 254);
+}
+
+.descriptionText{
+   font-family: sans-serif;
+   color: rgb(161, 161, 161);
+   font-size: 18px;
+   font-weight: 600;
+   margin: 10px;
+}
+
+@media (min-width: 980px) and (max-width: 1300px) {
+   .pizzas{
+      margin-left: 2%;
+      margin-right: 2%;
+   }
+
+   .informationText{
+      font-family: sans-serif;
+      color: rgb(161, 161, 161);
+      font-size: 16px;
+      margin-right: 20px;
+   }
+
+   .enterenceButton{
+      width: 12%
+   }
+   
+   .buttonExitText{
+      font-size: 14px;
+   }
+
+   .plusButton{
+      width: 26px;
+      line-height: 22px;
+      border-radius: 20px;
+   }
+
+   .minusButton{
+      width: 26px;
+      line-height: 22px;
+      border-radius: 20px;
+   }
+
+   .cancelButton{
+      width: 28px;
+      line-height: 24px;
+      border-radius: 20px;
+
+   }
+   
+ }
+
+ @media (min-width: 750px) and (max-width: 990px) {
+
+   .mainScreen{
+      width: 65%;
+   }
+
+   .top{
+      width: 65%;
+   }
+
+   .selectButtonGroup{
+      width: 100%;
+      flex-direction: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 40px 40px;
+   }
+
+   .selectButtonText{
+      font-size: 15px;
+   }
+
+   .orderPanel{
+      width: 35%;
+      left: 65%;
+   }
+
+   .orders{
+      height: 75%;
+   }
+
+   .pizzas{
+      margin-left: 1%;
+      margin-right: 1%;
+   }
+
+   .informationText{
+      font-family: sans-serif;
+      color: rgb(161, 161, 161);
+      font-size: 15px;
+      margin-right: 20px;
+   }
+
+   .enterenceButton{
+      width: 16%
+   }
+   
+   .buttonExitText{
+      font-size: 14px;
+   }
+
+   .plusButton{
+      width: 26px;
+      line-height: 22px;
+      border-radius: 20px;
+      font-size: 18px;
+   }
+
+   .minusButton{
+      width: 26px;
+      line-height: 22px;
+      border-radius: 20px;
+      font-size: 18px;
+   }
+
+   .cancelButton{
+      width: 28px;
+      line-height: 24px;
+      border-radius: 20px;
+      font-size: 16px;
+   }
+
+   .informationText.delivery{
+      display: none;
+   }
+
+   .orderPizzaName{
+      font-size: 20px;
+   }
+
+   .orderPrice{
+      font-size: 18px;
+   }
+
+   .pizzas{
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+   }
+
+   .pizzaName{
+      font-size: 22px;
+   }
+
+   .descriptionText{
+      display: flex;
+      font-size: 15px;
+   }
+
+   .confirmationOfPurchase{
+      width: 35%;
+      left: 65%;
+   }
+   
+ }
+
+ @media (min-width: 550px) and (max-width: 750px) {
+
+   .mainScreen{
+      width: 55%;
+   }
+
+   .top{
+      width: 55%;
+   }
+
+   .selectButtonGroup{
+      width: 100%;
+      flex-direction: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 40px 40px;
+      margin: 5px;
+   }
+
+   .selectButton{
+      margin: 2px;
+   }
+
+   .selectButtonText{
+      font-size: 12px;
+   }
+
+   .orderPanel{
+      width: 45%;
+      left: 55%;
+   }
+
+   .orders{
+      height: 75%;
+   }
+
+   .pizzas{
+      margin-left: 1%;
+      margin-right: 1%;
+   }
+
+   .informationText{
+      font-family: sans-serif;
+      color: rgb(161, 161, 161);
+      font-size: 15px;
+      margin-right: 20px;
+   }
+
+   .enterenceButton{
+      width: 24%
+   }
+   
+   .buttonExitText{
+      font-size: 11px;
+   }
+
+   .plusButton{
+      width: 26px;
+      line-height: 22px;
+      border-radius: 20px;
+      font-size: 18px;
+   }
+
+   .minusButton{
+      width: 26px;
+      line-height: 22px;
+      border-radius: 20px;
+      font-size: 18px;
+   }
+
+   .cancelButton{
+      width: 28px;
+      line-height: 24px;
+      border-radius: 20px;
+      font-size: 16px;
+   }
+
+   .informationText.delivery{
+      display: none;
+   }
+
+   .informationText.time{
+      display: none;
+   }
+
+   .orderPizzaName{
+      font-size: 20px;
+   }
+
+   .orderPrice{
+      font-size: 18px;
+   }
+
+   .pizzas{
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+   }
+
+   .pizzaName{
+      font-size: 22px;
+   }
+
+   .descriptionText{
+      display: flex;
+      font-size: 15px;
+   }
+
+   .confirmationOfPurchase{
+      width: 45%;
+      height: 14%;
+      left: 55%;
+   }
+   
+ }
+
+ @media (max-width: 550px) {
+
+   .mainScreen{
+      width: 55%;
+   }
+
+   .top{
+      width: 55%;
+   }
+
+   .information{
+      margin-left: 86px;
+   }
+
+   .pizzaKmaLabel{
+      width: 75px;
+   }
+
+   .informationLine{
+      height: 100%;
+      margin: 0px;
+      border-bottom: none;
+      flex-direction: column;
+   }
+
+   .informationLine.menu{
+      display: none;
+   }
+
+   .selectButtonGroup{
+      width: 95%;
+      flex-direction: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 5px;
+   }
+
+   .selectButton{
+      margin: 2px;
+   }
+
+   .selectButtonText{
+      font-size: 12px;
+   }
+
+   .orderPanel{
+      width: 45%;
+      left: 55%;
+   }
+
+   .orders{
+      height: 75%;
+   }
+
+   .pizzas{
+      margin-left: 1%;
+      margin-right: 1%;
+   }
+
+   .informationText{
+      font-family: sans-serif;
+      color: rgb(161, 161, 161);
+      font-size: 14px;
+      margin: 8px;
+   }
+
+   .enterenceButton{
+      width: 60%
+   }
+   
+   .buttonExitText{
+      font-size: 14px;
+   }
+
+   .plusButton{
+      width: 18px;
+      line-height: 14px;
+      border-radius: 20px;
+      font-size: 14px;
+   }
+
+   .minusButton{
+      width: 18px;
+      line-height: 14px;
+      border-radius: 20px;
+      font-size: 14px;
+   }
+
+   .cancelButton{
+      width: 20px;
+      line-height: 16px;
+      border-radius: 20px;
+      font-size: 14px;
+   }
+
+   .informationText.delivery{
+      display: none;
+   }
+
+   .informationText.time{
+      display: none;
+   }
+
+   .orderPizzaName{
+      font-size: 16px;
+   }
+
+   .amountText{
+      font-size: 12px;
+   }
+
+   .orderPrice{
+      font-size: 12px;
+   }
+
+   .pizzas{
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+   }
+
+   .pizzaName{
+      font-size: 22px;
+   }
+
+   .descriptionText{
+      display: flex;
+      font-size: 15px;
+   }
+
+   .ordersTop{
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .discountLabel{
+      width: 75px;
+   }
+
+   .discountText{
+      width: 75px;
+      font-size: 14px;
+   }
+
+   .confirmationOfPurchase{
+      width: 45%;
+      height: 14%;
+      left: 55%;
+   }
+ }
