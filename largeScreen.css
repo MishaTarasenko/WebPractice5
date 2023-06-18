@@ -162,6 +162,9 @@
    border-radius: 5px;
    margin: 5px;
    border: none;
+}
+
+.selectButton.selected{
    background-color: rgb(224, 142, 40);
 }
 
@@ -446,6 +449,13 @@
    flex-direction: row;
 }
 
+.orderPriceSection{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+
 .orderPrice{
    font-family: sans-serif;
    color: black;
@@ -549,6 +559,13 @@
    color: black;
    font-size: 16px;
    font-weight: 550;
+}
+
+.sumInUANSection{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
 }
 
 .sumInUAN{
