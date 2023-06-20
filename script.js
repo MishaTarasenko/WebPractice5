@@ -339,6 +339,8 @@ function MinusButtonClicked(button){
          }
       }
    }else{
+      document.querySelector(".ordersTop").querySelector(".amount").textContent--;
+      document.querySelector(".sumInUAN.money").textContent = parseInt(document.querySelector(".sumInUAN.money").textContent) - button.parentNode.parentNode.querySelector(".orderPrice.money").textContent;
       document.querySelector(".orders").removeChild(button.parentNode.parentNode.parentNode.parentNode);
    }
 }
