@@ -15,7 +15,7 @@
       "price": 169
    },
    "is_new": true,
-   "is_popular": true
+   "is_popular": false
 },
 {
    "id": 2,
@@ -33,7 +33,7 @@
       "weight": 840,
       "price": 199
    },
-   "is_new": true,
+   "is_new": false,
    "is_popular": true
 },
 {
@@ -52,8 +52,8 @@
       "weight": 780,
       "price": 179
    },
-   "is_new": true,
-   "is_popular": true
+   "is_new": false,
+   "is_popular": false
 },
 {
    "id": 4,
@@ -71,8 +71,8 @@
       "weight": 600,
       "price": 120
    },
-   "is_new": true,
-   "is_popular": true
+   "is_new": false,
+   "is_popular": false
 },
 {
    "id": 5,
@@ -91,7 +91,7 @@
       "price": 230
    },
    "is_new": true,
-   "is_popular": true
+   "is_popular": false
 },
 {
    "id": 6,
@@ -109,7 +109,7 @@
       "weight": 790,
       "price": 199
    },
-   "is_new": true,
+   "is_new": false,
    "is_popular": true
 },
 {
@@ -128,8 +128,8 @@
       "weight": 720,
       "price": 150
    },
-   "is_new": true,
-   "is_popular": true
+   "is_new": false,
+   "is_popular": false
 },
 {
    "id": 8,
@@ -147,13 +147,13 @@
       "weight": 760,
       "price": 235
    },
-   "is_new": true,
-   "is_popular": true
+   "is_new": false,
+   "is_popular": false
 },
 {
    "id": 9,
    "pizzaImg": "pizza_9.jpg",
-   "pizzaName": "З ковбасками та сиром чеддер",
+   "pizzaName": "З ковбасками та сиром",
    "type": "М'ясні",
    "description": "Вершкова основа, сир моцарела, бекон, смажене куряче філе, італійська пікантна салямі, пеперончіно, бекон, сир чеддер",
    "smallSize": {
@@ -166,7 +166,7 @@
       "weight": 800,
       "price": 199
    },
-   "is_new": true,
-   "is_popular": true
+   "is_new": false,
+   "is_popular": false
 }
 ]

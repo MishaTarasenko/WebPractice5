@@ -195,6 +195,7 @@
 }
 
 .pizza{
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -536,9 +537,8 @@
    position: fixed;
    height: 10%;
    width: 25%;
-   left: 75%;
-   bottom: -1px;
-   z-index: -1;
+   bottom: 1px;
+   z-index: 1;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -648,6 +648,37 @@
    font-size: 18px;
    font-weight: 600;
    margin: 10px;
+}
+
+.label{
+   height:25px;
+   position: absolute;
+   top: -15px;
+   left: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 0;
+   border-radius: 5px;
+}
+
+.label.new{
+   width: 20%;
+   background-color: rgb(203, 91, 81);
+}
+
+.label.popular{
+   left: 60%;
+   width: 40%;
+   background-color: rgb(114, 183, 99);
+}
+
+.labelText{
+   font-family: sans-serif;
+   color: white;
+   font-size: 18px;
+   font-weight: 600;
+   margin: 2%;
 }
 
 @media (min-width: 980px) and (max-width: 1300px) {
@@ -793,6 +824,19 @@
       width: 35%;
       left: 65%;
    }
+
+   .label.popular{
+      left: 65%;
+      width: 38%;
+   }
+
+   .labelText{
+      font-family: sans-serif;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 2%;
+   }
    
  }
 
@@ -906,6 +950,19 @@
       width: 45%;
       height: 14%;
       left: 55%;
+   }
+
+   .label.popular{
+      left: 65%;
+      width: 38%;
+   }
+
+   .labelText{
+      font-family: sans-serif;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 2%;
    }
    
  }
@@ -1057,4 +1114,54 @@
       height: 14%;
       left: 55%;
    }
+
+   .label.popular{
+      width: 30%;
+   }
+
+   .labelText{
+      font-family: sans-serif;
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 2%;
+   }
  }
+
+ @media (min-height: 560px) and (max-height: 750px) {
+   .confirmationOfPurchase{
+      height: 15%;
+   }
+   .orders{
+      height:75%;
+   }
+ }
+
+ @media (min-height: 400px) and (max-height: 560px) {
+   .confirmationOfPurchase{
+      height: 20%;
+   }
+   .orders{
+      height:65%;
+   }
+ }
+
+ @media (min-height: 300px) and (max-height: 400px) {
+   .confirmationOfPurchase{
+      height: 22%;
+   }
+   .orders{
+      height:55%;
+   }
+ }
+
+ @media (min-height: 200px) and (max-height: 300px) {
+   .confirmationOfPurchase{
+      height: 28%;
+   }
+   .orders{
+      height:45%;
+   }
+ }
+
+ 
