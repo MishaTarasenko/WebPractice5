@@ -1128,6 +1128,26 @@
    }
  }
 
+ @media (max-width: 370px) {
+   .body{
+      flex-direction: column;
+   }
+   .mainScreen{
+      width: 100%;
+   }
+   .top{
+      width: 100%;
+   }
+   .orderPanel{
+     position: static;
+     width: 100%;
+   }
+   .confirmationOfPurchase{
+      position: static;
+      width: 100%;
+   }
+ }
+
  @media (min-height: 560px) and (max-height: 750px) {
    .confirmationOfPurchase{
       height: 15%;
