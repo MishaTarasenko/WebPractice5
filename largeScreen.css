@@ -1131,15 +1131,28 @@
  @media (max-width: 370px) {
    .body{
       flex-direction: column;
+      justify-content: center;
    }
    .mainScreen{
-      width: 100%;
+      width: 90%;
    }
    .top{
-      width: 100%;
+      width: 90%;
+   }
+   .pizzas{
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+   }
+   .buyPizza{
+      display: grid;
+      grid-template-columns: 50px 50px;
+      justify-content: center;
+      align-items: center;
+      margin: 1px;
+      margin-top: 0px;
    }
    .orderPanel{
      position: static;
+     margin-top: 100px;
      width: 100%;
    }
    .confirmationOfPurchase{
