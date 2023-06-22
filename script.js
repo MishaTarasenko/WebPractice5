@@ -9,7 +9,7 @@ const body = document.querySelector(".body");
 body.addEventListener("click", function(event){
 let button = event.target;
 switch(button.className){
-   case "selectButtonText unselected" || "selectButton unselected":
+   case "selectButtonText unselected":
       typeOfPizzas = button.textContent;
       PrintPizza();
       ChangeButtonStile(button);
@@ -42,13 +42,10 @@ switch(button.className){
    }
 });
 
-PrintPizza();
-
 function PrintPizza(){
 if(typeOfPizzas == "Усі"){
    let pizzasArray = Array.from(pizzas.querySelectorAll(".pizza"));
-   let n = parseInt(pizzasArray.length);
-   for(let i = n; i > 0; i--){
+   for(let i = pizzasArray.length; i > 0; i--){
       pizzas.removeChild(pizzasArray[i - 1]);
    }
    for(let i = 0; i < pizzasInformation.length; i++){
@@ -127,9 +124,8 @@ if(typeOfPizzas == "Усі"){
    `;
 }else{
    let pizzasArray = Array.from(pizzas.querySelectorAll(".pizza"));
-   let n = parseInt(pizzasArray.length);
    let amountOfPizzaz = 0;
-   for(let i = n; i > 0; i--){
+   for(let i = pizzasArray.length; i > 0; i--){
       pizzas.removeChild(pizzasArray[i - 1]);
    }
    for(let i = 0; i < pizzasInformation.length; i++){
@@ -494,6 +490,6 @@ window.onscroll = function() {
    }
 }
 
-document.addEventListener("DOMContentLoaded", getOrders());
+document.addEventListener("DOMContentLoaded", getOrders(), PrintPizza());
 
 

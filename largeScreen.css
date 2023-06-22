@@ -116,7 +116,7 @@
 
 .products{
    position: relative;
-   top: 70px;
+   top: 120px;
 }
 
 .heading{
@@ -1152,7 +1152,7 @@
    }
    .orderPanel{
      position: static;
-     margin-top: 100px;
+     margin-top: 200px;
      width: 100%;
    }
    .confirmationOfPurchase{
