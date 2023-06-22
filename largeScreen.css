@@ -1134,10 +1134,10 @@
       justify-content: center;
    }
    .mainScreen{
-      width: 90%;
+      width: 100%;
    }
    .top{
-      width: 90%;
+      width: 100%;
    }
    .pizzas{
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -1158,6 +1158,14 @@
    .confirmationOfPurchase{
       position: static;
       width: 100%;
+   }
+
+   .sumOfPurpose{
+      font-size: 14px;
+   }
+
+   .sumInUAN{
+      font-size: 14px;
    }
  }
 

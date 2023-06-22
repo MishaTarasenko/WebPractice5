@@ -9,7 +9,7 @@ const body = document.querySelector(".body");
 body.addEventListener("click", function(event){
 let button = event.target;
 switch(button.className){
-   case "selectButtonText unselected":
+   case "selectButtonText unselected" || "selectButton unselected":
       typeOfPizzas = button.textContent;
       PrintPizza();
       ChangeButtonStile(button);
@@ -121,9 +121,14 @@ if(typeOfPizzas == "Усі"){
       }
       pizzas.appendChild(pizza);
    }
+   let heading = document.querySelector(".heading");
+   heading.innerHTML=`
+   Усі піци <section class="amount">9</section>
+   `;
 }else{
    let pizzasArray = Array.from(pizzas.querySelectorAll(".pizza"));
    let n = parseInt(pizzasArray.length);
+   let amountOfPizzaz = 0;
    for(let i = n; i > 0; i--){
       pizzas.removeChild(pizzasArray[i - 1]);
    }
@@ -197,8 +202,14 @@ if(typeOfPizzas == "Усі"){
             pizza.appendChild(labelNew);
          }
          pizzas.appendChild(pizza);
+         amountOfPizzaz += 1;
       }
    }
+   let heading = document.querySelector(".heading");
+   console.log(amountOfPizzaz);
+   heading.innerHTML=`
+   ${typeOfPizzas} <section class="amount">${amountOfPizzaz}</section>
+   `;
 }
 }
 
@@ -394,7 +405,6 @@ window.onscroll = function() {
 
  function getOrders(){
    if (localStorage.getItem("products") == "[]") {
-
    }else{
       let orders = JSON.parse(localStorage.getItem("orders"));
       orders.forEach(function (order) {
