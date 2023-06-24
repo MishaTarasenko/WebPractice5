@@ -83,7 +83,7 @@ if(typeOfPizzas == "Усі"){
             </section>
             <section class="weight">
                <img class="weightLabel" src="weight.svg" alt="weight">
-               <article class="text weight">${pizzasInformation[i].bigSize.weight}</article>
+               <article class="text">${pizzasInformation[i].bigSize.weight}</article>
             </section>
             <section class="price">
                <article class="textPrice">${pizzasInformation[i].bigSize.price}</article>
@@ -163,9 +163,9 @@ if(typeOfPizzas == "Усі"){
                   <article class="text">${pizzasInformation[i].bigSize.diameter}</article>
                </section>
                <section class="weight">
-                  <img class="weightLabel" src="weight.svg" alt="weight">
-                  <article class="text weight">${pizzasInformation[i].bigSize.weight}</article>
-               </section>
+               <img class="weightLabel" src="weight.svg" alt="weight">
+               <article class="text">${pizzasInformation[i].bigSize.weight}</article>
+            </section>
                <section class="price">
                   <article class="textPrice">${pizzasInformation[i].bigSize.price}</article>
                   <article class="textPriceUan">грн.</article>
